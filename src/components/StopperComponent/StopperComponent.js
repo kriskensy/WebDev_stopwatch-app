@@ -1,9 +1,9 @@
-import styles from './MainSection.module.scss';
+import styles from './StopperComponent.module.scss';
 import FormattedTime from '../FormattedTime/FormattedTime';
 import Button from '../Button/Button';
 import { useEffect, useState } from 'react';
 
-const MainSection = () => {
+const StopperComponent = () => {
 
   const [currentTime, setCurrentTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
@@ -34,7 +34,7 @@ const MainSection = () => {
   }
 
   return (
-    <div className={styles.mainSection}>
+    <div className={styles.stopperComponent}>
         <FormattedTime time={currentTime} />
         <Button onClick={startStopwatch}>Start</Button>
         <Button onClick={stopStopwatch}>Stop</Button>
@@ -44,4 +44,4 @@ const MainSection = () => {
   );
 };
 
-export default MainSection;
+export default StopperComponent;
