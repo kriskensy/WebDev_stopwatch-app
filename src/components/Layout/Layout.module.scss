@@ -1,1 +1,10 @@
 @import '../../styles/settings.scss';
+
+.layout {
+    margin: 20px auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
